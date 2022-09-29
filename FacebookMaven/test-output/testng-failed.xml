@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionSuit]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="Pack12.VerifySendMessangerPage">
+        <methods>
+          <include name="clraeObjects"/>
+          <include name="verifySendButton"/>
+          <include name="createPOMObjects"/>
+          <include name="closeBrowser"/>
+          <include name="openMessagePage"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- Pack12.VerifySendMessangerPage -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="Pack12.VerifyRoomPage">
+        <methods>
+          <include name="verifyContactToHelpCenterButton"/>
+          <include name="closeBrowser"/>
+          <include name="verifyReturnToMessengerButton"/>
+          <include name="clraeObjects"/>
+          <include name="openRoomPage"/>
+          <include name="openBrowser"/>
+          <include name="createPOMObject"/>
+          <include name="logoutFromApplication"/>
+        </methods>
+      </class> <!-- Pack12.VerifyRoomPage -->
+      <class name="Pack12.VerifySendMessangerPage">
+        <methods>
+          <include name="clraeObjects"/>
+          <include name="verifySendButton"/>
+          <include name="createPOMObjects"/>
+          <include name="closeBrowser"/>
+          <include name="openMessagePage"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- Pack12.VerifySendMessangerPage -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [RegressionSuit] -->
