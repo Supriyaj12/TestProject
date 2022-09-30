@@ -9,7 +9,7 @@ public class MessengerPage {
 	
 	@FindBy (xpath = "//a[text()='Rooms']") private WebElement room;
 	
-	@FindBy (xpath = "//a[text()='Features']") private WebElement features ; 
+//	@FindBy (xpath = "//a[text()='Features']") private WebElement features ; 
 	
 	public MessengerPage(WebDriver driver)
 	{
